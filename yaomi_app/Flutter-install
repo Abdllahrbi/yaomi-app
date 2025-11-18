@@ -1,0 +1,12 @@
+# تثبيت Flutter
+git clone https://github.com/flutter/flutter.git -b stable --depth 1
+export PATH="$PATH:`pwd`/flutter/bin"
+
+# توليد مجلد iOS
+cd yaomi_app
+flutter create .
+
+# رفع التغييرات
+git add ios/
+git commit -m "Generate complete iOS platform files"
+git push origin main
