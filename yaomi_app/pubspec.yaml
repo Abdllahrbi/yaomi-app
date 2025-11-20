@@ -1,6 +1,6 @@
 name: yaomi_app
 description: "A smart food assistant app that helps users manage home food inventory automatically."
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -38,7 +38,7 @@ dependencies:
   permission_handler: ^11.1.0
   
   # Localization
-  intl: ^0.20.2
+  intl: ^0.18.1
   
   # Charts & Analytics
   fl_chart: ^0.65.0
@@ -55,41 +55,14 @@ dependencies:
   webview_flutter: ^4.4.2
   url_launcher: ^6.2.2
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^3.0.1
-  flutter_launcher_icons: ^0.13.1
-  flutter_native_splash: ^2.3.6
 
 flutter:
   uses-material-design: true
 
-  # App assets
   assets:
     - assets/images/
-    - assets/icons/
-    - assets/logo.png
-
-# Launcher Icons Configuration
-flutter_launcher_icons:
-  android: true
-  ios: true
-  image_path: "assets/images/yaomi_logo.png"
-  adaptive_icon_background: "#FFFFFF"
-  adaptive_icon_foreground: "assets/images/yaomi_logo.png"
-  remove_alpha_ios: true
-
-# Splash Screen Configuration
-flutter_native_splash:
-  color: "#FFFFFF"
-  image: assets/images/yaomi_logo.png
-  android: true
-  ios: true
-  android_12:
-    image: assets/images/yaomi_logo.png
-    color: "#FFFFFF"
-
-
